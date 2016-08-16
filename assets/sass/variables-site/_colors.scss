@@ -1,0 +1,47 @@
+/*--------------------------------------------------------------
+# Colors
+--------------------------------------------------------------*/
+
+$color__base: #433f53;
+$color__accent: #645aaa;
+
+$color__base-800gray: tint($color__base, 20%);
+$color__base-600gray: tint($color__base, 40%);
+$color__base-300gray: tint($color__base, 70%);
+$color__base-100gray: tint($color__base, 90%); 
+
+$color__accent-purple: #645aaa;
+$color__accent-blue: #14a5e1;
+
+
+
+/*--------------------------------------------------------------
+# Color Implementations
+--------------------------------------------------------------*/
+
+$color__background-body: #fff;
+$color__background-screen: #f1f1f1;
+$color__background-hr: $color__base-100gray;
+$color__background-button: #e6e6e6;
+$color__background-pre: $color__base-100gray;
+$color__background-ins: #fff9c0;
+$color__background-header: $color__base-100gray;
+
+$color__text-main: $color__base-800gray;
+$color__text-headings: $color__base;
+$color__text-aside: $color__base-600gray;
+$color__text-meta: $color__base-100gray;
+
+$color__text-input: #666;
+$color__text-input-focus: #111;
+
+$color__link: royalblue;
+$color__link-visited: purple;
+$color__link-hover: midnightblue;
+
+$color__border-base: $color__base-100gray;
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: #ccc;
+$color__border-abbr: #666;

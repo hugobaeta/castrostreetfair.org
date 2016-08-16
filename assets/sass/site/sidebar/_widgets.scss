@@ -1,0 +1,28 @@
+.widget {
+	margin: 0 0 1.5em;
+  padding: 0;
+  color: $color__text-aside;
+
+	/* Make sure select elements fit in widgets. */
+	select, input {
+		max-width: 100%;
+	}
+
+  @include respondTo(atleast-medium) {
+      font-size: ms(-1);
+  }
+
+	h2 {
+		color: $color__accent-purple;
+	}
+}
+
+/* Search widget. */
+.widget_search {
+    .search-field {
+        width: 100%;
+    }
+    .search-submit {
+	   display: none;
+    }
+}

@@ -1,0 +1,36 @@
+
+
+
+
+// .site-header-image {
+//     @include animation(fadein 2s ease-out backwards);
+//     position: relative;
+//     overflow: hidden;
+//     background: $color__background-header;
+//     line-height: 0;
+//
+//     margin-bottom: ms(4);
+//
+//     .section-image {
+//         position: absolute;
+//         width: 100%;
+//         height: 100%;
+//         opacity: 0.6;
+//         @include animation(fadein-images 1s ease-out backwards, image-pulse 15.0s ease-in-out infinite alternate);
+//         background-size: cover;
+//         background-position: center;
+//         background-repeat: no-repeat;
+//
+//         display: block;
+//     }
+//
+//     .featured-image & {
+//         height: 70vh;
+//         @include respondTo(upto-medium) {
+//             height: 100vh;
+//         }
+//         @include respondTo(atleast-wide) {
+//             height: 100vh;
+//         }
+//     }
+// }

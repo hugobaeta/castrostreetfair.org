@@ -1,0 +1,101 @@
+.blog-home-content {
+
+    .site-main {
+        overflow: hidden;
+        //background: $color__background-feature;
+    }
+
+    .section-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.6;
+        //@include animation(fadein-images 1s ease-out backwards, image-pulse 15.0s ease-in-out infinite alternate);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    article {
+        @include animation(fadein 2s ease-out backwards);
+        position: relative;
+        width: 50%;
+        height: 32vw;
+        margin: 0;
+        padding: 0;
+        float: left;
+        border-bottom: 0;
+
+        overflow: hidden;
+
+        @include respondTo(upto-medium) {
+            width: 100%;
+            height: 100vh;
+            float: none;
+        }
+
+        &:first-child {
+            width: 100%;
+            height: 100vh;
+            .section-image {
+                @include animation(fadein-images 1s ease-out backwards, image-pulse 15.0s ease-in-out infinite alternate);
+            }
+        }
+
+        &:last-child {
+            clear: right;
+        }
+
+        .section-inner {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            width: 100%;
+            @include transition(width 0.4s ease-in-out);
+            @include respondTo(atleast-medium) {
+            }
+        }
+
+        .entry-header {
+            padding: 0 ms(0);
+            margin: 0 auto;
+            max-width: ms(18);
+            font-size: ms(-2);
+            text-align: center;
+
+            @include respondTo(atleast-extra-wide) {
+                font-size: ms(-1);
+            }
+
+            @include respondTo(upto-medium) {
+                font-size: ms(0);
+            }
+
+            .entry-title {
+                margin-top: 0;
+                margin-bottom: ms(-6);
+                a {
+                    text-decoration: none;
+                    color: white;
+                    &:hover {
+                        //color: $color__titlelink-hover;
+                    }
+                }
+            }
+        }
+
+        &:first-child .entry-header {
+            font-size: ms(0);
+            @include respondTo(atleast-extra-wide) {
+                font-size: ms(1);
+            }
+        }
+
+    }
+
+    .posts-navigation {
+        padding: ms(0);
+        margin: ms(0) auto 0;
+        max-width: ms(18);
+    }
+}
