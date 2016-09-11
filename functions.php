@@ -100,51 +100,10 @@ function castrostreetfair_widgets_init() {
 add_action( 'widgets_init', 'castrostreetfair_widgets_init' );
 
 /**
- * Google Fonts
- * Gives translators ability to deactivate fonts that don't include their language's characters.
- */
-function castrostreetfair_fonts_url() {
-    $fonts_url = '';
-
-    /* Translators: If there are characters in your language that are not
-    * supported by Montserrat, translate this to 'off'. Do not translate
-    * into your own language.
-    */
-    $franklin = _x( 'on', 'Libre Franklin font: on or off', 'castrostreetfair' );
-
-    /* Translators: If there are characters in your language that are not
-    * supported by Karla, translate this to 'off'. Do not translate
-    * into your own language.
-    */
-    $karla = _x( 'on', 'Karla font: on or off', 'castrostreetfair' );
-
-    if ( 'off' !== $franklin || 'off' !== $karla ) {
-        $font_families = array();
-
-        if ( 'off' !== $franklin ) {
-            $font_families[] = 'Libre+Franklin:900';
-        }
-
-        if ( 'off' !== $karla ) {
-            $font_families[] = 'Karla:400,700,400italic,700italic';
-        }
-
-        $query_args = array(
-            'family' => urlencode( implode( '|', $font_families ) ),
-            'subset' => urlencode( 'latin,latin-ext' ),
-        );
-
-        $fonts_url = add_query_arg( $query_args, '//fonts.googleapis.com/css' );
-    }
-
-    return $fonts_url;
-}
-
-/**
  * Enqueue scripts and styles.
  */
 function castrostreetfair_scripts() {
-	wp_enqueue_style( 'castrostreetfair-fonts', castrostreetfair_fonts_url(), array(), null );
+	wp_enqueue_style( 'castrostreetfair-fonts', 'http://fonts.googleapis.com/css?family=Libre+Franklin:900|Karla:400,700,400italic,700italic' );
 
 	wp_enqueue_style( 'castrostreetfair-style', get_stylesheet_uri() );
 

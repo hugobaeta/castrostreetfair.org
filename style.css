@@ -569,11 +569,11 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
+  color: #645aaa; }
   a:visited {
-    color: purple; }
+    color: #645aaa; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #14a5e1; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -1168,6 +1168,7 @@ a {
 ## Footer
 --------------------------------------------------------------*/
 .site-footer {
+  opacity: .8;
   padding: 1em 1em 1.286em;
   margin: 2.25em 0 0;
   color: #8e8c98; }
