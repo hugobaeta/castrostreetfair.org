@@ -1,12 +1,11 @@
 <?php
 /**
- * Template Name: Update
+ * Template Name: Maintenance Mode
  *
  * @package CastroStreetFair
  */?>
 
 <!DOCTYPE html>
-<!-- saved from url=(0042)http://s.codepen.io/hugobaeta/debug/ZOPEmQ -->
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

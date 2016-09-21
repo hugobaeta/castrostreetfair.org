@@ -14,10 +14,12 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
+
 		<ul class="site-info">
       <li class="cms-info">Proudly powered by <a href="http://wordpress.org/">WordPress</a> and <a href="http://dreamhost.com/">DreamHost</a>
 			<li class="theme-info"><a href="http://github.com/hugobaeta/castrostreetfair">Open Sourced Design</a> by <a href="http://hugobaeta.com">Hugo Baeta</a></li>
 		</ul><!-- .site-info -->
+		
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->
