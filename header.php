@@ -25,19 +25,26 @@
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			</div><!-- .site-branding -->
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'castrostreetfair' ); ?></button>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'header-menu', 'fallback_cb' => 'false', ) ); ?>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'castrostreetfair' ); ?></button>
+				<?php wp_nav_menu( array(
+					'theme_location' => 'primary',
+					'menu_id' => 'header-menu',
+					'fallback_cb' => 'false' ) ); ?>
 			</nav><!-- #site-navigation -->
 		</div><!-- .header-wrapper -->
 
-		<?php if ( is_singular() && has_post_thumbnail(  get_the_ID() ) ) :
-			$image_id = get_post_thumbnail_id();
-			$url = wp_get_attachment_image_src( $image_id, 'castrostreetfair-full' ); ?>
-		<div class="site-header-image" style="background-image: url(<?php echo esc_attr( $url[0] ); ?>);">
+		<?php
+		$image_id = get_post_thumbnail_id();
+		$url = wp_get_attachment_image_src( $image_id, 'castrostreetfair-full' );
+		if ( is_singular() && has_post_thumbnail(  get_the_ID() ) ) :?>
+		<div class="site-header-image-wrap">
+			<div class="site-header-image" style="background-image: url(<?php echo esc_attr( $url[0] ); ?>);"></div>
+		</div><!-- .site-header-image-wrap-->
 		<?php elseif ( get_header_image() ) : ?>
-		<div class="site-header-image" style="background-image: url(<?php header_image(); ?>);">
+		<div class="site-header-image-wrap">
+			<div class="site-header-image" style="background-image: url(<?php header_image(); ?>);"></div>
+		</div><!-- .site-header-image-wrap-->
 		<?php endif; ?>
-		</div><!-- .site-header-image-->
 
 	</header><!-- #masthead -->
 

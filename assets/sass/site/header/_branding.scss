@@ -1,0 +1,46 @@
+.site-branding {
+    @include animation(fadein 0.5s ease-out 0.5s backwards);
+
+    position: relative;
+    width: 80%;
+    min-width: ms(12);
+    margin: ms(0) auto;
+    color: #fff;
+
+    @include transition(all 0.5s ease-in-out);
+
+    @include respondTo(atleast-narrow) {
+      width: 60%;
+    }
+    @include respondTo(atleast-medium) {
+      width: 40%;
+    }
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: 30%;
+      }
+      & > a {
+        display: block;
+        @include position(absolute, 0);
+        @include hide-text;
+        background: url(assets/images/castrostreetfair-logo.svg) no-repeat;
+        @include transition(all 0.5s ease-in-out);
+        &:hover {
+          opacity: .8;
+          @include transition(all 0.5s ease-in-out);
+        }
+      }
+    }
+
+    .sidebar-toggled & {
+        width: 100%;
+        @include transition(all 0.5s ease-in-out);
+    }
+
+} // .site-branding

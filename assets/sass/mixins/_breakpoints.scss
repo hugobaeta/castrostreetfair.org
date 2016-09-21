@@ -10,6 +10,9 @@ $ultra-wide: 1600px;
   @if $media == upto-narrow {
     @media (max-width: $narrow) { @content; }
   }
+  @else if $media == atleast-narrow {
+    @media (min-width: $narrow) { @content; }
+  }
 
   @else if $media == upto-medium {
     @media (max-width: $medium) { @content; }

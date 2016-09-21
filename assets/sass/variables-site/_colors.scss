@@ -25,7 +25,7 @@ $color__background-hr: $color__base-100gray;
 $color__background-button: #e6e6e6;
 $color__background-pre: $color__base-100gray;
 $color__background-ins: #fff9c0;
-$color__background-header: $color__base-100gray;
+$color__background-header: $color__base;
 
 $color__text-main: $color__base-800gray;
 $color__text-headings: $color__base;
@@ -38,6 +38,8 @@ $color__text-input-focus: #111;
 $color__link: $color__accent-purple;
 $color__link-visited: $color__accent-purple;
 $color__link-hover: $color__accent-blue;
+$color__headernavlink: rgba($color__base-100gray, .8);
+$color__headernavlink-hover: #fff;
 
 $color__border-base: $color__base-100gray;
 $color__border-button: #ccc #ccc #bbb;
