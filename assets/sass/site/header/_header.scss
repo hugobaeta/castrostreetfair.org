@@ -4,12 +4,13 @@
     margin: 0;
     padding: 0;
     @include linear-gradient(5deg, $color__accent-purple 50%, $color__accent-blue 120%);
-    //overflow: hidden;
 
     // Exceptions
+
     .page-template-home-temporary & {
       .site-branding {
-        height: 70vh;
+        height: 60vh;
+        margin: 0 auto;
       }
       h1 {
         position: relative;
@@ -21,6 +22,8 @@
         display: none;
       }
     } //.page-template-home-temporary &
+
+    
 
 } //.site-header
 

@@ -22,7 +22,7 @@ $color__accent-blue: #14a5e1;
 $color__background-body: #fff;
 $color__background-screen: #f1f1f1;
 $color__background-hr: $color__base-100gray;
-$color__background-button: #e6e6e6;
+$color__background-button: $color__accent-blue;
 $color__background-pre: $color__base-100gray;
 $color__background-ins: #fff9c0;
 $color__background-header: $color__base;
@@ -47,3 +47,6 @@ $color__border-button-hover: #ccc #bbb #aaa;
 $color__border-button-focus: #aaa #bbb #bbb;
 $color__border-input: #ccc;
 $color__border-abbr: #666;
+
+
+$color__focus: $color__accent-blue;

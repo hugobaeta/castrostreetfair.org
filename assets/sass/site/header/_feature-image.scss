@@ -8,9 +8,7 @@
   @include animation(fadein-images 1s ease-out backwards, image-pulse 15.0s ease-in-out infinite alternate);
   @include position(absolute, 0);
   line-height: 0;
-
   opacity: 0.1;
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
