@@ -735,6 +735,18 @@ a {
     transform: translateY(-50%); }
   .page-template-home-temporary .site-header .main-navigation {
     display: none; }
+  .page-about .site-header {
+    background-color: #14a5e1;
+    background-image: -webkit-linear-gradient(-273deg, #14a5e1 0%, #645aaa 100%);
+    background-image: linear-gradient(3deg,#14a5e1 0%, #645aaa 100%); }
+  .page-entertainment .site-header {
+    background-color: #645aaa;
+    background-image: -webkit-linear-gradient(-273deg, #645aaa 20%, #EB3C1E 130%);
+    background-image: linear-gradient(3deg,#645aaa 20%, #EB3C1E 130%); }
+  .page-fair .site-header {
+    background-color: #645aaa;
+    background-image: -webkit-linear-gradient(-273deg, #645aaa 10%, #55BE46 100%);
+    background-image: linear-gradient(3deg,#645aaa 10%, #55BE46 100%); }
 
 .site-header-wrapper {
   position: relative;

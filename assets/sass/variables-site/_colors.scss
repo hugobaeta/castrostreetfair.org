@@ -2,16 +2,21 @@
 # Colors
 --------------------------------------------------------------*/
 
+$color__accent-purple: #645aaa;
+$color__accent-blue: #14a5e1;
+$color__accent-green: #55BE46;
+$color__accent-yellow: #FFBE1E;
+$color__accent-orange: #FA8232;
+$color__accent-red: #EB3C1E;
+
 $color__base: #433f53;
-$color__accent: #645aaa;
+$color__accent: $color__accent-purple;
 
 $color__base-800gray: tint($color__base, 20%);
 $color__base-600gray: tint($color__base, 40%);
 $color__base-300gray: tint($color__base, 70%);
 $color__base-100gray: tint($color__base, 90%);
 
-$color__accent-purple: #645aaa;
-$color__accent-blue: #14a5e1;
 
 
 
