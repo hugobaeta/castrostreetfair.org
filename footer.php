@@ -15,11 +15,25 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
+		<section class="sponsors">
+			<h2>The 2016 Castro Street Fair is proudly sponsosred by</h2>
+			<ul class="sponsors-list">
+				<li>Miller Lite</li>
+				<li>Chevron</li>
+				<li>Recology</li>
+				<li>Bed Bath &amp; Beyond</li>
+				<li>Curran Theater</li>
+				<li>Via Media</li>
+				<li>Club Card</li>
+				<li>Grants for the Arts</li>
+			</ul>
+		</section>
+
 		<ul class="site-info">
       <li class="cms-info">Proudly powered by <a href="http://wordpress.org/">WordPress</a> and <a href="http://dreamhost.com/">DreamHost</a>
 			<li class="theme-info"><a href="http://github.com/hugobaeta/castrostreetfair">Open Sourced Design</a> by <a href="http://hugobaeta.com">Hugo Baeta</a></li>
 		</ul><!-- .site-info -->
-		
+
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->

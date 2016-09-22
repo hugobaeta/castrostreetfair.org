@@ -20,6 +20,28 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/images\/csf-2016-sponsors-mobile.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 97248,
+		"inputAbbreviatedPath": "\/assets\/images\/csf-2016-sponsors-mobile.png",
+		"outputAbbreviatedPath": "\/assets\/images\/csf-2016-sponsors-mobile.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/csf-2016-sponsors.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 107113,
+		"inputAbbreviatedPath": "\/assets\/images\/csf-2016-sponsors.png",
+		"outputAbbreviatedPath": "\/assets\/images\/csf-2016-sponsors.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/js\/customizer.js": {
 		"fileType": 64,
 		"ignore": 0,

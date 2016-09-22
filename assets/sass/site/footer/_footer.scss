@@ -1,21 +1,80 @@
 .site-footer {
-  opacity: .8;
-  padding: ms(0) ms(0) ms(1);
-  margin: ms(4) 0 0;
+  padding: ms(0);
+  margin: ms(4) auto 0;
+  max-width: 58em;
   color: $color__text-aside;
-  .site-info {
+  text-align: center;
+
+  ul, li {
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+  }
+
+  .sponsors {
+    border-top: 1px solid $color__border-base;
+    border-bottom: 1px solid $color__border-base;
+    padding: ms(4) 0 ms(2);
+    margin-bottom: ms(4);
+    h2 {
+      font-size: ms(-2);
+      letter-spacing: ms(-12);
+      color: $color__text-aside;
+    }
+
+    // li fallback
+    ul.sponsors-list  li {
+      display: inline-block;
+      &:after {
+        content: ", ";
+      }
+      &:last-child:after {
+        content: "";
+      }
+    } // li fallback
+
+    ul.sponsors-list {
+      @include hide-text;
+      display: block;
+
+      background: url(assets/images/csf-2016-sponsors.png) no-repeat;
+      background-size: 100% auto;
+      margin: 0;
+      padding: 0;
+      &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: 13.333333333%;
+      }
+
+      @include respondTo(upto-medium) {
+        background: url(assets/images/csf-2016-sponsors-mobile.png) no-repeat;
+        background-size: 100% auto;
+        &:before {
+          width: 100%;
+          padding-top: 46.666666667%;
+        }
+      }
+
+      li {
+        display: none;
+      }
+    }
+
+  } //.sponsors
+
+  .site-info {
+    margin: 0 0 ms(2);
     li {
         display: inline-block;
         text-transform: uppercase;
         font-size: ms(-3);
         letter-spacing: ms(-15);
-        margin: 0 ms(-2);
+        margin: 0 ms(0);
     }
-  }
+  } //.site-info
+
   a {
     display: inline-block;
     //color: $color__footerlink;
@@ -24,4 +83,5 @@
       //color: $color__footerlink-hover;
     }
   }
-}
+
+} //.site-footer
