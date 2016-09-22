@@ -735,18 +735,18 @@ a {
     transform: translateY(-50%); }
   .page-template-home-temporary .site-header .main-navigation {
     display: none; }
-  .page-about .site-header {
+  .page-about .site-header, .page-board .site-header, .page-get-involved .site-header, .page-faq .site-header, .page-contacts .site-header {
     background-color: #14a5e1;
-    background-image: -webkit-linear-gradient(-273deg, #14a5e1 0%, #645aaa 100%);
-    background-image: linear-gradient(3deg,#14a5e1 0%, #645aaa 100%); }
+    background-image: -webkit-linear-gradient(-273deg, #14a5e1 -30%, #645aaa 80%);
+    background-image: linear-gradient(3deg,#14a5e1 -30%, #645aaa 80%); }
   .page-entertainment .site-header {
     background-color: #645aaa;
     background-image: -webkit-linear-gradient(-273deg, #645aaa 20%, #EB3C1E 130%);
     background-image: linear-gradient(3deg,#645aaa 20%, #EB3C1E 130%); }
   .page-fair .site-header {
-    background-color: #645aaa;
-    background-image: -webkit-linear-gradient(-273deg, #645aaa 10%, #55BE46 100%);
-    background-image: linear-gradient(3deg,#645aaa 10%, #55BE46 100%); }
+    background-color: #14a5e1;
+    background-image: -webkit-linear-gradient(-273deg, #14a5e1 -30%, #55BE46 60%, #FFBE1E 120%);
+    background-image: linear-gradient(3deg,#14a5e1 -30%, #55BE46 60%, #FFBE1E 120%); }
 
 .site-header-wrapper {
   position: relative;
@@ -828,7 +828,7 @@ a {
     width: 100%;
     font-size: 0.6666666667em;
     letter-spacing: 0.1316872428em;
-    color: rgba(236, 236, 238, 0.8);
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: none; }
     .site-header .main-navigation a:hover {
       color: #fff; }
@@ -859,6 +859,8 @@ a {
         margin: 0; }
         .site-header .main-navigation .menu-main-navigation-container ul li a {
           padding: 1.5em 1em; }
+        .site-header .main-navigation .menu-main-navigation-container ul li.current_page_item > a {
+          color: #fff; }
       .site-header .main-navigation .menu-main-navigation-container ul li > ul.sub-menu {
         display: none; }
       .site-header .main-navigation .menu-main-navigation-container ul li:hover > ul.sub-menu {

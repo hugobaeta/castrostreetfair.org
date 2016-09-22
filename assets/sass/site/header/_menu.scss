@@ -51,6 +51,9 @@
 	      a {
 	      	padding: ms(2) ms(0);
 	      }
+				&.current_page_item > a {
+					color: $color__headernavlink-hover;
+				}
 			}
 
 			// Sub-menu

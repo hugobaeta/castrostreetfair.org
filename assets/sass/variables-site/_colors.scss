@@ -18,8 +18,6 @@ $color__base-300gray: tint($color__base, 70%);
 $color__base-100gray: tint($color__base, 90%);
 
 
-
-
 /*--------------------------------------------------------------
 # Color Implementations
 --------------------------------------------------------------*/
@@ -43,7 +41,7 @@ $color__text-input-focus: #111;
 $color__link: $color__accent-purple;
 $color__link-visited: $color__accent-purple;
 $color__link-hover: $color__accent-blue;
-$color__headernavlink: rgba($color__base-100gray, .8);
+$color__headernavlink: rgba(#fff, .8);
 $color__headernavlink-hover: #fff;
 
 $color__border-base: $color__base-100gray;
@@ -52,6 +50,5 @@ $color__border-button-hover: #ccc #bbb #aaa;
 $color__border-button-focus: #aaa #bbb #bbb;
 $color__border-input: #ccc;
 $color__border-abbr: #666;
-
 
 $color__focus: $color__accent-blue;

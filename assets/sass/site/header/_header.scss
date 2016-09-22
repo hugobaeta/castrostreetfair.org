@@ -23,8 +23,12 @@
       }
     } //.page-template-home-temporary &
 
-    .page-about & {
-      @include linear-gradient(3deg, $color__accent-blue 0%, $color__accent-purple 100%);
+    .page-about &,
+    .page-board &,
+    .page-get-involved &,
+    .page-faq &,
+    .page-contacts & {
+      @include linear-gradient(3deg, $color__accent-blue -30%, $color__accent-purple 80%);
     }
 
     .page-entertainment & {
@@ -32,7 +36,7 @@
     }
 
     .page-fair & {
-      @include linear-gradient(3deg, $color__accent-purple 10%, $color__accent-green 100%);
+      @include linear-gradient(3deg, $color__accent-blue -30%, $color__accent-green 60%, $color__accent-yellow 120%);
     }
 
 } //.site-header
