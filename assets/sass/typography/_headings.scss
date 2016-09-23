@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .site-content {
     h1 {
-        font-size: ms(5);
+        font-size: ms(4);
         @include respondTo(upto-narrow) {
             font-size: ms(3);
         }
@@ -23,20 +23,23 @@ h1, h2, h3, h4, h5, h6 {
 				// 		font-size: ms(7);
 				// }
     }
+    h2, h3, h4, h5, h6 {
+      color: $color__text-headings-content;
+    }
     h2 {
-        font-size: ms(3);
+        font-size: ms(2);
         @include respondTo(upto-narrow) {
             font-size: ms(2);
         }
     }
     h3 {
-        font-size: ms(2);
+        font-size: ms(1);
         @include respondTo(upto-narrow) {
             font-size: ms(1);
         }
     }
     h4 {
-        font-size: ms(1);
+        font-size: ms(0);
     }
 
     h5 {

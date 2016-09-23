@@ -5,7 +5,7 @@
 .hentry {
 	margin: 0 0 ms(4);
     padding: 0 0 ms(4);
-    border-bottom: 4px solid $color__border-base;
+    border-bottom: 1px solid $color__border-base;
 
     &:last-child {
         border-bottom: none;
@@ -25,7 +25,7 @@
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: ms(2) 0;
+	margin: ms(2) 0 0;
 
     p:first-child {
         margin-top: 0;
@@ -45,9 +45,9 @@
         margin-bottom: ms(-6);
         a {
             text-decoration: none;
-            //color: $color__titlelink;
+            color: $color__link-title;
             &:hover {
-                //color: $color__titlelink-hover;
+                color: $color__link-title-hover;
             }
         }
     }
@@ -56,16 +56,18 @@
 .entry-header .entry-meta,
 .entry-footer {
     color: $color__text-meta;
+		span {
+			font-size: ms(-2);
+			letter-spacing: ms(-15);
+			text-transform: uppercase;
+			margin-right: ms(0);
+		}
     a {
         text-decoration: none;
-        //color: $color__asidelink;
+        color: $color__link-meta;
         &:hover {
-            //color: $color__asidelink-hover;
+            color: $color__link-meta-hover;
         }
-    }
-    span {
-        margin-right: ms(0);
-        display: inline-block;
     }
 }
 
@@ -73,25 +75,34 @@
 .post-navigation {
     margin: 0 0 ms(4);
     padding: 0 0 ms(4);
-    border-bottom: 4px solid $color__border-base;
+    //border-bottom: 4px solid $color__border-base;
 
     a {
         text-decoration: none;
     }
 
-    // .nav-previous:before,
-    // .nav-next:before {
-    //     display: block;
-    //     @extend %heading-base;
-    //     font-size: ms(-2);
-    //     letter-spacing: ms(-12);
+    .nav-previous:before,
+    .nav-next:before {
+        display: block;
+        @extend %heading-base;
+        font-size: ms(-2);
+        letter-spacing: ms(-12);
+				color: $color__text-meta;
+    }
+    .nav-previous:before {
+        content: "Previously";
+    }
+    .nav-next:before {
+        content: "Up Next";
+    }
+}
 
-    //     color: $color__text-softer;
-    // }
-    // .nav-previous:before {
-    //     content: "Previously";
-    // }
-    // .nav-next:before {
-    //     content: "Up Next";
-    // }
+// Full Width templates
+@include respondTo(atleast-medium) {
+	.single.full-width {
+		.site-main {
+			max-width: 70%;
+			margin: 0 auto;
+		}
+	}
 }

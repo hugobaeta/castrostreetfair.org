@@ -12,6 +12,7 @@ $color__accent-red: #EB3C1E;
 $color__base: #433f53;
 $color__accent: $color__accent-purple;
 
+$color__base-900gray: tint($color__base, 10%);
 $color__base-800gray: tint($color__base, 20%);
 $color__base-600gray: tint($color__base, 40%);
 $color__base-300gray: tint($color__base, 70%);
@@ -32,8 +33,9 @@ $color__background-header: $color__base;
 
 $color__text-main: $color__base-800gray;
 $color__text-headings: $color__base;
+$color__text-headings-content: $color__base-900gray;
 $color__text-aside: $color__base-600gray;
-$color__text-meta: $color__base-100gray;
+$color__text-meta: $color__base-300gray;
 
 $color__text-input: #666;
 $color__text-input-focus: #111;
@@ -43,6 +45,10 @@ $color__link-visited: $color__accent-purple;
 $color__link-hover: $color__accent-blue;
 $color__headernavlink: rgba(#fff, .8);
 $color__headernavlink-hover: #fff;
+$color__link-title: $color__base;
+$color__link-title-hover: $color__accent;
+$color__link-meta: $color__base-300gray;
+$color__link-meta-hover: $color__accent;
 
 $color__border-base: $color__base-100gray;
 $color__border-button: #ccc #ccc #bbb;
