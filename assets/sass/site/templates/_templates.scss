@@ -22,6 +22,10 @@ ul.board-members {
       margin-right: 0;
     }
 
+    @include respondTo(upto-medium) {
+      width: 46%;
+    }
+
     figure {
       @include flex-direction(column);
       img {
