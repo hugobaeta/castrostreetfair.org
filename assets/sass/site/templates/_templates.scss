@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------
+## About Sections
+--------------------------------------------------------------*/
+//@import "about";
+
+ul.board-members {
+  @include display(flex);
+  @include flex-wrap(wrap);
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @include display(flex);
+
+    width: 22%;
+    margin-right: 4%;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    figure {
+      @include flex-direction(column);
+      img {
+        max-width: 100%;
+      }
+      h2 {
+        font-size: ms(0);
+        margin: 0 0 ms(-4);
+      }
+      p {
+        margin: 0;
+        font-size: ms(-1);
+        line-height: 1;
+      }
+    }
+  }
+}
