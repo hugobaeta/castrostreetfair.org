@@ -1,4 +1,63 @@
 table {
-	margin: 0 0 1.5em;
+	margin: 0 0 ms(2);
 	width: 100%;
+
+	tr {
+		border-top: 1px solid $color__border-base;
+		&:last-child {
+			border-bottom: 1px solid $color__border-base;
+		}
+	}
+
+	td {
+		padding: ms(0) 0;
+	}
+
+	@include respondTo(upto-medium) {
+		tr {
+			display: block;
+			padding: ms(0) 0;
+		}
+		td {
+			display: block;
+			padding: 0;
+			width: 100%;
+		}
+	}
+
+}
+
+table.schedule {
+	margin-bottom: ms(6);
+
+	td {
+		a {
+			text-decoration: none;
+		}
+	}
+
+	td.schedule-time {
+		font-weight: bold;
+		width: 15%;
+	}
+
+	td.schedule-stage {
+		width: 25%;
+	}
+
+	td.schedule-time,
+	td.schedule-stage {
+		font-size: ms(-2);
+		text-transform: uppercase;
+		letter-spacing: ms(-16);
+		padding-right: ms(2);
+		@include respondTo(upto-medium) {
+			width: 100%;
+		}
+	}
+
+	td.schedule-act {
+		font-size: ms(2);
+		line-height: 1.2;
+	}
 }

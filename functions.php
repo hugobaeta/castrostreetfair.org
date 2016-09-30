@@ -41,6 +41,7 @@ function castrostreetfair_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'large', 1100, 9999  );
 	add_image_size( 'castrostreetfair-full', 2000, 1500, true  );
 
 	// This theme uses wp_nav_menu() in one location.
@@ -92,7 +93,7 @@ add_filter( 'body_class', 'add_slug_body_class' );
  * @global int $content_width
  */
 function castrostreetfair_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'castrostreetfair_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'castrostreetfair_content_width', 1100 );
 }
 add_action( 'after_setup_theme', 'castrostreetfair_content_width', 0 );
 
