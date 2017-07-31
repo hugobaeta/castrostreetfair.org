@@ -15,19 +15,11 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
-		<section class="sponsors">
-			<h2>The 2016 Castro Street Fair is proudly sponsosred by</h2>
-			<ul class="sponsors-list">
-				<li>Miller Lite</li>
-				<li>Chevron</li>
-				<li>Recology</li>
-				<li>Bed Bath &amp; Beyond</li>
-				<li>Curran Theater</li>
-				<li>Via Media</li>
-				<li>Club Card</li>
-				<li>Grants for the Arts</li>
-			</ul>
-		</section>
+		<!-- <section class="sponsors">
+			<h2>Sponsorships</h2>
+			<p>The Castro Street Fair is actively seeking new and returning sponsors! We have plenty of unique activation opportunities for companies and organizations of almost all sizes!</p>
+			<p>Don’t miss out on being a part of the magic, contact <a href="mailto:sponsorship@castrostreetfair.org">sponsorship@castrostreetfair.org</a> today!</p>
+		</section> -->
 
 		<ul class="site-info">
       <li class="cms-info">Proudly powered by <a href="http://wordpress.org/">WordPress</a> and <a href="http://dreamhost.com/">DreamHost</a>

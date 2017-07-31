@@ -320,7 +320,7 @@ button,
 input,
 select,
 textarea {
-  color: #696575;
+  color: #696599;
   font-family: "Karla", sans-serif;
   font-size: 21px;
   font-weight: 400;
@@ -350,7 +350,7 @@ h1, h2, h3, h4, h5, h6, .post-navigation .nav-previous:before,
   clear: both;
   text-transform: uppercase;
   line-height: 1;
-  color: #433f53;
+  color: #433f80;
   word-break: keep-all;
   margin: 0 0 0.5em; }
 
@@ -360,7 +360,7 @@ h1, h2, h3, h4, h5, h6, .post-navigation .nav-previous:before,
     .site-content h1 {
       font-size: 1.929em; } }
 .site-content h2, .site-content h3, .site-content h4, .site-content h5, .site-content h6 {
-  color: #565264; }
+  color: #56528d; }
 .site-content h2 {
   font-size: 1.5em; }
   @media (max-width: 480px) {
@@ -407,7 +407,7 @@ address {
   margin: 0 0 1.5em; }
 
 pre {
-  background: #ececee;
+  background: #ececf2;
   font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
   font-size: 0.9375rem;
@@ -455,7 +455,7 @@ blockquote, q {
     content: ""; }
 
 hr {
-  background-color: #ececee;
+  background-color: #ececf2;
   border: 0;
   height: 1px;
   margin-bottom: 1.5em; }
@@ -490,9 +490,9 @@ table {
   margin: 0 0 1.5em;
   width: 100%; }
   table tr {
-    border-top: 1px solid #ececee; }
+    border-top: 1px solid #ececf2; }
     table tr:last-child {
-      border-bottom: 1px solid #ececee; }
+      border-bottom: 1px solid #ececf2; }
   table td {
     padding: 1em 0; }
   @media (max-width: 800px) {
@@ -657,7 +657,7 @@ a {
     border-radius: 3px;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto !important;
-    color: #696575;
+    color: #696599;
     display: block;
     font-size: 14px;
     font-size: 0.875rem;
@@ -728,7 +728,7 @@ a {
 .widget {
   margin: 0 0 1.5em;
   padding: 0;
-  color: #8e8c98;
+  color: #8e8cb3;
   /* Make sure select elements fit in widgets. */ }
   .widget select, .widget input {
     max-width: 100%; }
@@ -818,7 +818,8 @@ a {
     .site-branding {
       width: 40%; } }
   .site-branding h1 {
-    margin: 0;
+    position: relative;
+    margin: 0 0 1em;
     padding: 0; }
     .site-branding h1:before {
       display: block;
@@ -844,11 +845,10 @@ a {
         -webkit-transition: all 0.5s ease-in-out;
         -moz-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out; }
-  .sidebar-toggled .site-branding {
-    width: 100%;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out; }
+  .site-branding .site-description {
+    font-size: 1em;
+    letter-spacing: 0.0877914952em;
+    color: rgba(255, 255, 255, 0.8); }
 
 /*--------------------------------------------------------------
 ## Navigation Menu
@@ -901,7 +901,7 @@ a {
         padding: 0;
         margin: 0; }
         .site-header .main-navigation .menu-main-navigation-container ul li a {
-          padding: 1.5em 1em; }
+          padding: 1em 1.5em; }
         .site-header .main-navigation .menu-main-navigation-container ul li.current_page_item > a {
           color: #fff; }
       .site-header .main-navigation .menu-main-navigation-container ul li > ul.sub-menu {
@@ -916,7 +916,7 @@ a {
         -o-transform: translateX(-50%);
         transform: translateX(-50%);
         width: 9.7655625em;
-        background: #433f53;
+        background: #433f80;
         border-radius: 0.1975308642em;
         text-align: left; }
         .site-header .main-navigation .menu-main-navigation-container ul li:hover > ul.sub-menu:after {
@@ -932,7 +932,7 @@ a {
           height: 0;
           width: 0;
           border: solid transparent;
-          border-bottom-color: #433f53;
+          border-bottom-color: #433f80;
           border-width: 0.4444444444em;
           pointer-events: none; }
         .site-header .main-navigation .menu-main-navigation-container ul li:hover > ul.sub-menu li, .site-header .main-navigation .menu-main-navigation-container ul li:hover > ul.sub-menu a {
@@ -989,14 +989,14 @@ a {
     width: 100%;
     margin: 0;
     padding: 0.4444444444em;
-    background: rgba(67, 63, 83, 0.5); }
+    background: rgba(67, 63, 128, 0.5); }
     .main-navigation .menu-toggle {
       z-index: 300; }
     .main-navigation .menu-main-navigation-container {
       display: none; }
 
   .main-navigation.toggled {
-    background: #433f53; }
+    background: #433f80; }
     .main-navigation.toggled .menu-toggle:before {
       content: 'Close '; }
     .main-navigation.toggled .menu-main-navigation-container {
@@ -1070,7 +1070,7 @@ a {
 .hentry {
   margin: 0 0 2.25em;
   padding: 0 0 2.25em;
-  border-bottom: 1px solid #ececee; }
+  border-bottom: 1px solid #ececf2; }
   .hentry:last-child {
     border-bottom: none; }
 
@@ -1103,13 +1103,13 @@ a {
   margin-bottom: 0.2962962963em; }
   .entry-header .entry-title a {
     text-decoration: none;
-    color: #433f53; }
+    color: #433f80; }
     .entry-header .entry-title a:hover {
       color: #645aaa; }
 
 .entry-header .entry-meta,
 .entry-footer {
-  color: #c7c5cb; }
+  color: #c7c5d9; }
   .entry-header .entry-meta span,
   .entry-footer span {
     font-size: 0.6666666667em;
@@ -1119,7 +1119,7 @@ a {
   .entry-header .entry-meta a,
   .entry-footer a {
     text-decoration: none;
-    color: #c7c5cb; }
+    color: #c7c5d9; }
     .entry-header .entry-meta a:hover,
     .entry-footer a:hover {
       color: #645aaa; }
@@ -1134,7 +1134,7 @@ a {
     display: block;
     font-size: 0.6666666667em;
     letter-spacing: 0.0877914952em;
-    color: #c7c5cb; }
+    color: #c7c5d9; }
   .post-navigation .nav-previous:before {
     content: "Previously"; }
   .post-navigation .nav-next:before {
@@ -1230,13 +1230,13 @@ a {
 .search-results .page-header {
   padding: 2.25em 1em 4.34025em;
   margin: 0 0 2.25em;
-  border-bottom: 4px solid #ececee;
+  border-bottom: 4px solid #ececf2;
   text-align: center;
-  color: #8e8c98; }
+  color: #8e8cb3; }
   .archive .page-header .page-title,
   .search-results .page-header .page-title {
     font-size: 1.5em;
-    color: #8e8c98;
+    color: #8e8cb3;
     margin: 0; }
   .archive .page-header .page-description,
   .search-results .page-header .page-description {
@@ -1268,7 +1268,7 @@ a {
   list-style: none;
   margin: 0;
   padding-left: 0;
-  border-left: 4px solid #ececee; }
+  border-left: 4px solid #ececf2; }
 
 .comment-list .children > li {
   padding-left: calc(32px + 0.8em); }
@@ -1345,7 +1345,7 @@ a {
   display: block;
   font-size: 0.6666666667em;
   letter-spacing: 0.0877914952em;
-  color: #8e8c98;
+  color: #8e8cb3;
   padding: 0 0 0.4444444444em; }
 
 .comment-form input[type="text"],
@@ -1390,9 +1390,9 @@ a {
   letter-spacing: 0.0501777168em;
   line-height: 1.5em;
   text-align: center;
-  color: #8e8c98;
-  border-top: 4px solid #ececee;
-  border-bottom: 4px solid #ececee;
+  color: #8e8cb3;
+  border-top: 4px solid #ececf2;
+  border-bottom: 4px solid #ececf2;
   padding: 1em 0; }
 
 /*--------------------------------------------------------------
@@ -1402,21 +1402,26 @@ a {
   padding: 1em;
   margin: 0 auto;
   max-width: 58em;
-  color: #8e8c98;
+  color: #8e8cb3;
   text-align: center; }
   .site-footer ul, .site-footer li {
     list-style: none;
     margin: 0;
     padding: 0; }
   .site-footer .sponsors {
-    border-top: 1px solid #ececee;
-    border-bottom: 1px solid #ececee;
+    border-top: 1px solid #ececf2;
+    border-bottom: 1px solid #ececf2;
     padding: 2.25em 0 1.5em;
     margin-bottom: 2.25em; }
     .site-footer .sponsors h2 {
-      font-size: 0.6666666667em;
-      letter-spacing: 0.0877914952em;
-      color: #8e8c98; }
+      font-size: 1em;
+      letter-spacing: 0.0877914952em; }
+    .site-footer .sponsors p {
+      font-size: 0.8573333333em;
+      max-width: 46rem;
+      text-align: left;
+      margin-left: auto;
+      margin-right: auto; }
     .site-footer .sponsors ul.sponsors-list li {
       display: inline-block; }
       .site-footer .sponsors ul.sponsors-list li:after {
@@ -1487,10 +1492,10 @@ a {
   margin: 0;
   padding: 0;
   border-bottom: 0;
-  background: #433f53;
+  background: #433f80;
   overflow: hidden; }
   .error404 article:nth-child(even) {
-    background: rgba(67, 63, 83, 0.95); }
+    background: rgba(67, 63, 128, 0.95); }
   .error404 article .section-inner {
     position: absolute;
     top: 50%;
@@ -1640,7 +1645,7 @@ object {
 .wp-caption {
   margin-bottom: 1.5em;
   max-width: 100%;
-  background-color: #ececee; }
+  background-color: #ececf2; }
   .wp-caption img[class*="wp-image-"] {
     display: block;
     margin-left: auto;

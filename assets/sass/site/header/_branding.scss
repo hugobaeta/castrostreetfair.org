@@ -17,7 +17,8 @@
     }
 
     h1 {
-      margin: 0;
+      position: relative;
+      margin: 0 0 ms(0);
       padding: 0;
       &:before {
         display: block;
@@ -38,9 +39,15 @@
       }
     }
 
-    .sidebar-toggled & {
-        width: 100%;
-        @include transition(all 0.5s ease-in-out);
+    .site-description {
+      font-size: ms(0);
+      letter-spacing: ms(-12);
+      color: rgba(white,.8);
     }
+
+    // .sidebar-toggled & {
+    //     width: 100%;
+    //     @include transition(all 0.5s ease-in-out);
+    // }
 
 } // .site-branding

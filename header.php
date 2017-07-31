@@ -3,7 +3,8 @@
  * @package CastroStreetFair
  */
 
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -23,6 +24,7 @@
 		<div class="site-header-wrapper">
 			<div class="site-branding">
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</div><!-- .site-branding -->
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'castrostreetfair' ); ?></button>

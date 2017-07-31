@@ -17,9 +17,17 @@
     padding: ms(4) 0 ms(2);
     margin-bottom: ms(4);
     h2 {
-      font-size: ms(-2);
+      font-size: ms(0);
       letter-spacing: ms(-12);
-      color: $color__text-aside;
+      //color: $color__text-aside;
+    }
+
+    p {
+      font-size: ms(-1);
+      max-width: 46rem;
+      text-align: left;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     // li fallback
