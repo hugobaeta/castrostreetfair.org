@@ -1433,7 +1433,7 @@ a {
       text-indent: 101%;
       white-space: nowrap;
       display: block;
-      background: url(assets/images/csf-2016-sponsors.png) no-repeat;
+      background: url(assets/images/csf-2017-sponsors.png) no-repeat;
       background-size: 100% auto;
       margin: 0;
       padding: 0; }
@@ -1444,7 +1444,7 @@ a {
         padding-top: 13.333333333%; }
       @media (max-width: 800px) {
         .site-footer .sponsors ul.sponsors-list {
-          background: url(assets/images/csf-2016-sponsors-mobile.png) no-repeat;
+          background: url(assets/images/csf-2017-sponsors-mobile.png) no-repeat;
           background-size: 100% auto; }
           .site-footer .sponsors ul.sponsors-list:before {
             width: 100%;

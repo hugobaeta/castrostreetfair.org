@@ -44,8 +44,7 @@
     ul.sponsors-list {
       @include hide-text;
       display: block;
-
-      background: url(assets/images/csf-2016-sponsors.png) no-repeat;
+      background: url(assets/images/csf-2017-sponsors.png) no-repeat;
       background-size: 100% auto;
       margin: 0;
       padding: 0;
@@ -57,7 +56,7 @@
       }
 
       @include respondTo(upto-medium) {
-        background: url(assets/images/csf-2016-sponsors-mobile.png) no-repeat;
+        background: url(assets/images/csf-2017-sponsors-mobile.png) no-repeat;
         background-size: 100% auto;
         &:before {
           width: 100%;
