@@ -53,6 +53,10 @@
     }
 }
 
+.parent-pageid-16 .entry-header {
+	display: none;
+}
+
 .entry-header .entry-meta,
 .entry-footer {
     color: $color__text-meta;
@@ -70,6 +74,8 @@
         }
     }
 }
+
+
 
 
 .post-navigation {

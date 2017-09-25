@@ -759,7 +759,7 @@ a {
 .site-header {
   position: relative;
   width: 100%;
-  margin: 0;
+  margin: 0 0 1.5em;
   padding: 0;
   background-color: #645aaa;
   background-image: -webkit-linear-gradient(-275deg, #645aaa 50%, #14a5e1 120%);
@@ -1107,6 +1107,9 @@ a {
     .entry-header .entry-title a:hover {
       color: #645aaa; }
 
+.parent-pageid-16 .entry-header {
+  display: none; }
+
 .entry-header .entry-meta,
 .entry-footer {
   color: #c7c5d9; }
@@ -1414,8 +1417,9 @@ a {
     padding: 2.25em 0 1.5em;
     margin-bottom: 2.25em; }
     .site-footer .sponsors h2 {
-      font-size: 1em;
-      letter-spacing: 0.0877914952em; }
+      font-size: 0.6666666667em;
+      letter-spacing: 0.0877914952em;
+      color: #8e8cb3; }
     .site-footer .sponsors p {
       font-size: 0.8573333333em;
       max-width: 46rem;
