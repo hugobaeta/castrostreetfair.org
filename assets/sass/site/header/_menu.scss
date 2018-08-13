@@ -1,7 +1,9 @@
 .main-navigation {
 	@include animation(fadein 0.5s ease-out 0.3s backwards);
+	position: relative;
 	width: 100%;
-	margin-top: ms(8);
+	height: auto;
+	margin-top: ms(4);
 } //.main-navigation
 
 .site-header .main-navigation {
@@ -25,7 +27,7 @@
   } //a
 
 	.menu-main-navigation-container {
-		@include position(absolute, null null ms(0) 50%);
+		@include position(absolute, null null ms(-6) 50%);
 		@include transform(translateX(-50%));
 
 		z-index: 200;
@@ -158,11 +160,11 @@
 
 @include respondTo(upto-medium) {
 	.main-navigation {
-		@include position(absolute, 0 0 null 0);
+		//@include position(absolute, 0 0 null 0);
 		width: 100%;
 		margin: 0;
-		padding: ms(-4);
-		background: rgba($color__background-header,.5);
+		padding: ms(-8) ms(-4) ms(-2);
+		background-color: $color__accent-purple;
 		.menu-toggle {
 			z-index: 300;
 		}
@@ -173,7 +175,7 @@
 
 	// When Toggled
 	.main-navigation.toggled {
-		background: $color__background-header;
+		background-color: $color__accent-purple;
 		.menu-toggle:before {
 			content: 'Close ';
 		}

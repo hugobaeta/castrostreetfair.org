@@ -1,4 +1,5 @@
 .site-branding {
+  display: none;
     @include animation(fadein 0.5s ease-out 0.5s backwards);
 
     position: relative;
@@ -17,26 +18,30 @@
     }
 
     h1 {
-      position: relative;
-      margin: 0 0 ms(0);
-      padding: 0;
-      &:before {
-        display: block;
-        content: "";
-        width: 100%;
-        padding-top: 30%;
+      a {
+        color: #fff;
+        text-decoration: none;
       }
-      & > a {
-        display: block;
-        @include position(absolute, 0);
-        @include hide-text;
-        background: url(assets/images/castrostreetfair-logo.svg) no-repeat;
-        @include transition(all 0.5s ease-in-out);
-        &:hover {
-          opacity: .8;
-          @include transition(all 0.5s ease-in-out);
-        }
-      }
+      // position: relative;
+      // margin: 0 0 ms(0);
+      // padding: 0;
+      // &:before {
+      //   display: block;
+      //   content: "";
+      //   width: 100%;
+      //   padding-top: 30%;
+      // }
+      // & > a {
+      //   display: block;
+      //   @include position(absolute, 0);
+      //   @include hide-text;
+      //   background: url(assets/images/castrostreetfair-logo.svg) no-repeat;
+      //   @include transition(all 0.5s ease-in-out);
+      //   &:hover {
+      //     opacity: .8;
+      //     @include transition(all 0.5s ease-in-out);
+      //   }
+      // }
     }
 
     .site-description {

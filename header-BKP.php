@@ -9,8 +9,6 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#433f80" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
@@ -30,10 +28,6 @@
 				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</div><!-- .site-branding -->
 
-			<div class="cover-image">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/csf-2018-cover.jpg" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" /></a>
-			</div>
-
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'castrostreetfair' ); ?></button>
 				<?php wp_nav_menu( array(
@@ -43,6 +37,19 @@
 			</nav><!-- #site-navigation -->
 
 		</div><!-- .header-wrapper -->
+
+		<?php
+		$image_id = get_post_thumbnail_id();
+		$url = wp_get_attachment_image_src( $image_id, 'castrostreetfair-full' );
+		if ( is_singular() && has_post_thumbnail(  get_the_ID() ) ) :?>
+		<div class="site-header-image-wrap">
+			<div class="site-header-image" style="background-image: url(<?php echo esc_attr( $url[0] ); ?>);"></div>
+		</div><!-- .site-header-image-wrap-->
+		<?php elseif ( get_header_image() ) : ?>
+		<div class="site-header-image-wrap">
+			<div class="site-header-image" style="background-image: url(<?php header_image(); ?>);"></div>
+		</div><!-- .site-header-image-wrap-->
+		<?php endif; ?>
 
 	</header><!-- #masthead -->
 

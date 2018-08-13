@@ -3,8 +3,8 @@
     // width: 100vw;
 }
 
-.site-content,
-.site-header-wrapper {
+.site-content {
+    @include animation(fadein 0.5s ease-out 0.25s backwards);
     padding: ms(2) ms(0);
     margin: 0 auto;
     max-width: 58em;

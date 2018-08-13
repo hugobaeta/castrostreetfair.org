@@ -747,8 +747,10 @@ a {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-.site-content,
-.site-header-wrapper {
+.site-content {
+  -webkit-animation: fadein 0.5s ease-out 0.25s backwards;
+  -moz-animation: fadein 0.5s ease-out 0.25s backwards;
+  animation: fadein 0.5s ease-out 0.25s backwards;
   padding: 1.5em 1em;
   margin: 0 auto;
   max-width: 58em; }
@@ -757,13 +759,14 @@ a {
 ## Header
 --------------------------------------------------------------*/
 .site-header {
+  -webkit-animation: fadein 0.5s ease-out 0s backwards;
+  -moz-animation: fadein 0.5s ease-out 0s backwards;
+  animation: fadein 0.5s ease-out 0s backwards;
   position: relative;
   width: 100%;
   margin: 0 0 1.5em;
   padding: 0;
-  background-color: #645aaa;
-  background-image: -webkit-linear-gradient(-275deg, #645aaa 50%, #14a5e1 120%);
-  background-image: linear-gradient(5deg,#645aaa 50%, #14a5e1 120%); }
+  background-color: #645aaa; }
   .page-template-home-temporary .site-header .site-branding {
     height: 60vh;
     margin: 0 auto; }
@@ -778,18 +781,6 @@ a {
     transform: translateY(-50%); }
   .page-template-home-temporary .site-header .main-navigation {
     display: none; }
-  .page-about .site-header, .page-board .site-header, .page-get-involved .site-header, .page-faq .site-header, .page-contacts .site-header {
-    background-color: #14a5e1;
-    background-image: -webkit-linear-gradient(-273deg, #14a5e1 -30%, #645aaa 80%);
-    background-image: linear-gradient(3deg,#14a5e1 -30%, #645aaa 80%); }
-  .page-entertainment .site-header {
-    background-color: #645aaa;
-    background-image: -webkit-linear-gradient(-273deg, #645aaa 20%, #EB3C1E 130%);
-    background-image: linear-gradient(3deg,#645aaa 20%, #EB3C1E 130%); }
-  .page-fair .site-header {
-    background-color: #14a5e1;
-    background-image: -webkit-linear-gradient(-273deg, #14a5e1 -30%, #55BE46 60%, #FFBE1E 120%);
-    background-image: linear-gradient(3deg,#14a5e1 -30%, #55BE46 60%, #FFBE1E 120%); }
 
 .site-header-wrapper {
   position: relative;
@@ -800,6 +791,7 @@ a {
 ## Branding
 --------------------------------------------------------------*/
 .site-branding {
+  display: none;
   -webkit-animation: fadein 0.5s ease-out 0.5s backwards;
   -moz-animation: fadein 0.5s ease-out 0.5s backwards;
   animation: fadein 0.5s ease-out 0.5s backwards;
@@ -817,34 +809,9 @@ a {
   @media (min-width: 800px) {
     .site-branding {
       width: 40%; } }
-  .site-branding h1 {
-    position: relative;
-    margin: 0 0 1em;
-    padding: 0; }
-    .site-branding h1:before {
-      display: block;
-      content: "";
-      width: 100%;
-      padding-top: 30%; }
-    .site-branding h1 > a {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      overflow: hidden;
-      text-indent: 101%;
-      white-space: nowrap;
-      background: url(assets/images/castrostreetfair-logo.svg) no-repeat;
-      -webkit-transition: all 0.5s ease-in-out;
-      -moz-transition: all 0.5s ease-in-out;
-      transition: all 0.5s ease-in-out; }
-      .site-branding h1 > a:hover {
-        opacity: .8;
-        -webkit-transition: all 0.5s ease-in-out;
-        -moz-transition: all 0.5s ease-in-out;
-        transition: all 0.5s ease-in-out; }
+  .site-branding h1 a {
+    color: #fff;
+    text-decoration: none; }
   .site-branding .site-description {
     font-size: 1em;
     letter-spacing: 0.0877914952em;
@@ -857,8 +824,10 @@ a {
   -webkit-animation: fadein 0.5s ease-out 0.3s backwards;
   -moz-animation: fadein 0.5s ease-out 0.3s backwards;
   animation: fadein 0.5s ease-out 0.3s backwards;
+  position: relative;
   width: 100%;
-  margin-top: 5.0625em; }
+  height: auto;
+  margin-top: 2.25em; }
 
 .site-header .main-navigation {
   font-family: "Libre Franklin", sans-serif;
@@ -877,7 +846,7 @@ a {
       color: #fff; }
   .site-header .main-navigation .menu-main-navigation-container {
     position: absolute;
-    bottom: 1em;
+    bottom: 0.2962962963em;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -982,21 +951,17 @@ a {
     display: block; } }
 @media (max-width: 800px) {
   .main-navigation {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
     width: 100%;
     margin: 0;
-    padding: 0.4444444444em;
-    background: rgba(67, 63, 128, 0.5); }
+    padding: 0.1975308642em 0.4444444444em 0.6666666667em;
+    background-color: #645aaa; }
     .main-navigation .menu-toggle {
       z-index: 300; }
     .main-navigation .menu-main-navigation-container {
       display: none; }
 
   .main-navigation.toggled {
-    background: #433f80; }
+    background-color: #645aaa; }
     .main-navigation.toggled .menu-toggle:before {
       content: 'Close '; }
     .main-navigation.toggled .menu-main-navigation-container {
@@ -1016,30 +981,11 @@ a {
 /*--------------------------------------------------------------
 ## Featured Image
 --------------------------------------------------------------*/
-.site-header-image-wrap {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; }
-
-.site-header-image {
-  -webkit-animation: fadein-images 1s ease-out backwards, image-pulse 15s ease-in-out infinite alternate;
-  -moz-animation: fadein-images 1s ease-out backwards, image-pulse 15s ease-in-out infinite alternate;
-  animation: fadein-images 1s ease-out backwards, image-pulse 15s ease-in-out infinite alternate;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  line-height: 0;
-  opacity: 0.1;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
+@media (max-width: 800px) {
+  .site-header .cover-image img {
+    height: 50vh;
+    max-height: 250px;
+    object-fit: cover; } }
 
 /*--------------------------------------------------------------
 ## Layout

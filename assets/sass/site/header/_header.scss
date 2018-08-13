@@ -1,9 +1,11 @@
 .site-header {
+    @include animation(fadein 0.5s ease-out 0.0s backwards);
     position: relative;
     width: 100%;
     margin: 0 0 1.5em;
     padding: 0;
-    @include linear-gradient(5deg, $color__accent-purple 50%, $color__accent-blue 120%);
+    //@include linear-gradient(5deg, $color__accent-purple 50%, $color__accent-blue 120%);
+    background-color: $color__accent-purple;
 
     // Exceptions
 
@@ -23,21 +25,21 @@
       }
     } //.page-template-home-temporary &
 
-    .page-about &,
-    .page-board &,
-    .page-get-involved &,
-    .page-faq &,
-    .page-contacts & {
-      @include linear-gradient(3deg, $color__accent-blue -30%, $color__accent-purple 80%);
-    }
-
-    .page-entertainment & {
-      @include linear-gradient(3deg, $color__accent-purple 20%, $color__accent-red 130%);
-    }
-
-    .page-fair & {
-      @include linear-gradient(3deg, $color__accent-blue -30%, $color__accent-green 60%, $color__accent-yellow 120%);
-    }
+    // .page-about &,
+    // .page-board &,
+    // .page-get-involved &,
+    // .page-faq &,
+    // .page-contacts & {
+    //   @include linear-gradient(3deg, $color__accent-blue -30%, $color__accent-purple 80%);
+    // }
+    //
+    // .page-entertainment & {
+    //   @include linear-gradient(3deg, $color__accent-purple 20%, $color__accent-red 130%);
+    // }
+    //
+    // .page-fair & {
+    //   @include linear-gradient(3deg, $color__accent-blue -30%, $color__accent-green 60%, $color__accent-yellow 120%);
+    // }
 
 } //.site-header
 
