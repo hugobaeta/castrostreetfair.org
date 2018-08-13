@@ -119,7 +119,7 @@ add_action( 'widgets_init', 'castrostreetfair_widgets_init' );
  * Enqueue scripts and styles.
  */
 function castrostreetfair_scripts() {
-	wp_enqueue_style( 'castrostreetfair-fonts', 'http://fonts.googleapis.com/css?family=Libre+Franklin:900|Karla:400,700,400italic,700italic' );
+	wp_enqueue_style( 'castrostreetfair-fonts', 'https://fonts.googleapis.com/css?family=Libre+Franklin:900|Karla:400,700,400italic,700italic' );
 
 	wp_enqueue_style( 'castrostreetfair-style', get_stylesheet_uri() );
 
