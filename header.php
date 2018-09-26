@@ -46,4 +46,10 @@
 
 	</header><!-- #masthead -->
 
+	<?php if ( is_active_sidebar( 'sponsors' ) ) : ?>
+		<section class="sponsors">
+			<?php dynamic_sidebar( 'sponsors' ); ?>
+		</section>
+  <?php endif; ?>
+	
 	<div id="content" class="site-content">

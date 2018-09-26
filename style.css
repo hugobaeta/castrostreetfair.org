@@ -988,6 +988,26 @@ a {
     object-fit: cover; } }
 
 /*--------------------------------------------------------------
+## Featured Image
+--------------------------------------------------------------*/
+section.sponsors {
+  animation: fadein 0.5s ease-out 0.2s backwards;
+  max-width: 58em;
+  padding: 0 0 1em;
+  margin: 0 auto 1.5em;
+  text-align: center;
+  border-bottom: 1px solid #ececf2; }
+  section.sponsors img:nth-child(1) {
+    display: none; }
+  section.sponsors img:nth-child(2) {
+    display: block; }
+  @media (min-width: 800px) {
+    section.sponsors img:nth-child(1) {
+      display: block; }
+    section.sponsors img:nth-child(2) {
+      display: none; } }
+
+/*--------------------------------------------------------------
 ## Layout
 --------------------------------------------------------------*/
 @media (min-width: 800px) {

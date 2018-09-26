@@ -1,0 +1,27 @@
+section.sponsors {
+	animation: fadein 0.5s ease-out 0.2s backwards;
+	max-width: 58em;
+	padding: 0 0 1em;
+	margin: 0 auto 1.5em;
+	text-align: center;
+	border-bottom: 1px solid #ececf2;
+
+	img:nth-child(1) {
+		display: none;
+	}
+
+	img:nth-child(2) {
+		display: block;
+	}
+
+	@include respondTo(atleast-medium) {
+		img:nth-child(1) {
+			display: block;
+		}
+
+		img:nth-child(2) {
+			display: none;
+		}
+	}
+
+}//.section.sponsors

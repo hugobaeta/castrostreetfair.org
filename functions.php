@@ -112,6 +112,15 @@ function castrostreetfair_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sponsors', 'castrostreetfair' ),
+		'id'            => 'sponsors',
+		'description'   => esc_html__( 'Add a image widget with sponsors', 'castrostreetfair' ),
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '',
+		'after_title'   => '',
+	) );
 }
 add_action( 'widgets_init', 'castrostreetfair_widgets_init' );
 
