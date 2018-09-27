@@ -853,12 +853,13 @@ a {
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
-    z-index: 200; }
+    z-index: 200;
+    width: 100%; }
     .site-header .main-navigation .menu-main-navigation-container ul {
       list-style: none;
       margin: 0;
       padding-left: 0;
-      text-align: right;
+      text-align: center;
       line-height: 0; }
       .site-header .main-navigation .menu-main-navigation-container ul li, .site-header .main-navigation .menu-main-navigation-container ul a {
         line-height: 1;

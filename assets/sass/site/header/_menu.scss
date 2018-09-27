@@ -29,14 +29,14 @@
 	.menu-main-navigation-container {
 		@include position(absolute, null null ms(-6) 50%);
 		@include transform(translateX(-50%));
-
 		z-index: 200;
+		width: 100%;
 
 		ul { // Parent list Globals
 			list-style: none;
 			margin: 0;
 			padding-left: 0;
-			text-align: right;
+			text-align: center;
 			line-height: 0;
 
 			li, a { // Globals
