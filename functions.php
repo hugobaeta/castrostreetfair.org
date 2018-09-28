@@ -113,6 +113,15 @@ function castrostreetfair_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
+		'name'          => esc_html__( 'Header Message', 'castrostreetfair' ),
+		'id'            => 'header-message',
+		'description'   => esc_html__( 'Add a text widget with a message after the header', 'castrostreetfair' ),
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '',
+		'after_title'   => '',
+	) );
+	register_sidebar( array(
 		'name'          => esc_html__( 'Sponsors', 'castrostreetfair' ),
 		'id'            => 'sponsors',
 		'description'   => esc_html__( 'Add a image widget with sponsors', 'castrostreetfair' ),

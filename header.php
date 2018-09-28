@@ -46,4 +46,10 @@
 
 	</header><!-- #masthead -->
 
+	<?php if ( is_active_sidebar( 'header-message' ) ) : ?>
+		<section class="header-message">
+			<?php dynamic_sidebar( 'header-message' ); ?>
+		</section>
+  <?php endif; ?>
+
 	<div id="content" class="site-content">

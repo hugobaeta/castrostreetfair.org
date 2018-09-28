@@ -16,6 +16,7 @@
 
 .site-header .cover-image img {
   @include respondTo(upto-medium) {
+    width: 100%;
     height: 50vh;
     max-height: 250px;
     object-fit: cover;
