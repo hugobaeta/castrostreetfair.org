@@ -13,24 +13,13 @@
 
 	</div><!-- #content -->
 
+	<?php if ( is_active_sidebar( 'sponsors' ) ) : ?>
+		<section class="sponsors">
+			<?php dynamic_sidebar( 'sponsors' ); ?>
+		</section>
+  <?php endif; ?>
+
 	<footer id="colophon" class="site-footer" role="contentinfo">
-
-		<?php
-
-		// <section class="sponsors">
-		// 	<h2>The 2017 Castro Street Fair is proudly sponsosred by</h2>
-		// 	<ul class="sponsors-list">
-		// 		<li>SKYY Vodka</li>
-		// 		<li>Ballast Point</li>
-		// 		<li>Corona</li>
-		// 		<li>Maven Carshare</li>
-		// 		<li>Via Media</li>
-		// 		<li>Recology</li>
-		// 		<li>Grants for the Arts</li>
-		// 	</ul>
-		// </section>
-
-		?>
 
 		<ul class="site-info">
       <li class="cms-info">Proudly powered by <a href="http://wordpress.org/">WordPress</a> and <a href="http://dreamhost.com/">DreamHost</a>

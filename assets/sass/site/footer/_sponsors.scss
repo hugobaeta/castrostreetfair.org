@@ -1,25 +1,25 @@
 section.sponsors {
 	animation: fadein 0.5s ease-out 0.2s backwards;
 	max-width: 58em;
-	padding: 0 0 1em;
-	margin: 0 auto 1.5em;
+	padding: 1.5em 0;
+	margin: 0 auto;
 	text-align: center;
-	border-bottom: 1px solid #ececf2;
+	border-top: 1px solid $color__border-base;
 
-	img:nth-child(1) {
+	> *:nth-child(1) {
 		display: none;
 	}
 
-	img:nth-child(2) {
+	> *:nth-child(2) {
 		display: block;
 	}
 
 	@include respondTo(atleast-medium) {
-		img:nth-child(1) {
+		> *:nth-child(1) {
 			display: block;
 		}
 
-		img:nth-child(2) {
+		> *:nth-child(2) {
 			display: none;
 		}
 	}

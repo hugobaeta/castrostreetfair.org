@@ -989,26 +989,6 @@ a {
     object-fit: cover; } }
 
 /*--------------------------------------------------------------
-## Featured Image
---------------------------------------------------------------*/
-section.sponsors {
-  animation: fadein 0.5s ease-out 0.2s backwards;
-  max-width: 58em;
-  padding: 0 0 1em;
-  margin: 0 auto 1.5em;
-  text-align: center;
-  border-bottom: 1px solid #ececf2; }
-  section.sponsors img:nth-child(1) {
-    display: none; }
-  section.sponsors img:nth-child(2) {
-    display: block; }
-  @media (min-width: 800px) {
-    section.sponsors img:nth-child(1) {
-      display: block; }
-    section.sponsors img:nth-child(2) {
-      display: none; } }
-
-/*--------------------------------------------------------------
 ## Layout
 --------------------------------------------------------------*/
 @media (min-width: 800px) {
@@ -1369,59 +1349,16 @@ section.sponsors {
 ## Footer
 --------------------------------------------------------------*/
 .site-footer {
-  padding: 1em;
+  padding: 1.5em 1em;
   margin: 0 auto;
   max-width: 58em;
   color: #8e8cb3;
-  text-align: center; }
+  text-align: center;
+  border-top: 1px solid #ececf2; }
   .site-footer ul, .site-footer li {
     list-style: none;
     margin: 0;
     padding: 0; }
-  .site-footer .sponsors {
-    border-top: 1px solid #ececf2;
-    border-bottom: 1px solid #ececf2;
-    padding: 2.25em 0 1.5em;
-    margin-bottom: 2.25em; }
-    .site-footer .sponsors h2 {
-      font-size: 0.6666666667em;
-      letter-spacing: 0.0877914952em;
-      color: #8e8cb3; }
-    .site-footer .sponsors p {
-      font-size: 0.8573333333em;
-      max-width: 46rem;
-      text-align: left;
-      margin-left: auto;
-      margin-right: auto; }
-    .site-footer .sponsors ul.sponsors-list li {
-      display: inline-block; }
-      .site-footer .sponsors ul.sponsors-list li:after {
-        content: ", "; }
-      .site-footer .sponsors ul.sponsors-list li:last-child:after {
-        content: ""; }
-    .site-footer .sponsors ul.sponsors-list {
-      overflow: hidden;
-      text-indent: 101%;
-      white-space: nowrap;
-      display: block;
-      background: url(assets/images/csf-2017-sponsors.png) no-repeat;
-      background-size: 100% auto;
-      margin: 0;
-      padding: 0; }
-      .site-footer .sponsors ul.sponsors-list:before {
-        display: block;
-        content: "";
-        width: 100%;
-        padding-top: 13.333333333%; }
-      @media (max-width: 800px) {
-        .site-footer .sponsors ul.sponsors-list {
-          background: url(assets/images/csf-2017-sponsors-mobile.png) no-repeat;
-          background-size: 100% auto; }
-          .site-footer .sponsors ul.sponsors-list:before {
-            width: 100%;
-            padding-top: 46.666666667%; } }
-      .site-footer .sponsors ul.sponsors-list li {
-        display: none; }
   .site-footer .site-info {
     margin: 0 0 1.5em; }
     .site-footer .site-info li {
@@ -1433,6 +1370,26 @@ section.sponsors {
   .site-footer a {
     display: inline-block;
     text-decoration: none; }
+
+/*--------------------------------------------------------------
+## Sponsors
+--------------------------------------------------------------*/
+section.sponsors {
+  animation: fadein 0.5s ease-out 0.2s backwards;
+  max-width: 58em;
+  padding: 1.5em 0;
+  margin: 0 auto;
+  text-align: center;
+  border-top: 1px solid #ececf2; }
+  section.sponsors > *:nth-child(1) {
+    display: none; }
+  section.sponsors > *:nth-child(2) {
+    display: block; }
+  @media (min-width: 800px) {
+    section.sponsors > *:nth-child(1) {
+      display: block; }
+    section.sponsors > *:nth-child(2) {
+      display: none; } }
 
 /*--------------------------------------------------------------
 ## 404

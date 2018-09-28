@@ -1,75 +1,16 @@
 .site-footer {
-  padding: ms(0);
+  padding: 1.5em ms(0);
   margin: 0 auto;
   max-width: 58em;
   color: $color__text-aside;
   text-align: center;
+  border-top: 1px solid $color__border-base;
 
   ul, li {
     list-style: none;
     margin: 0;
     padding: 0;
   }
-
-  .sponsors {
-    border-top: 1px solid $color__border-base;
-    border-bottom: 1px solid $color__border-base;
-    padding: ms(4) 0 ms(2);
-    margin-bottom: ms(4);
-    h2 {
-      font-size: ms(-2);
-      letter-spacing: ms(-12);
-      color: $color__text-aside;
-    }
-
-    p {
-      font-size: ms(-1);
-      max-width: 46rem;
-      text-align: left;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    // li fallback
-    ul.sponsors-list  li {
-      display: inline-block;
-      &:after {
-        content: ", ";
-      }
-      &:last-child:after {
-        content: "";
-      }
-    } // li fallback
-
-    ul.sponsors-list {
-      @include hide-text;
-      display: block;
-      background: url(assets/images/csf-2017-sponsors.png) no-repeat;
-      background-size: 100% auto;
-      margin: 0;
-      padding: 0;
-      &:before {
-        display: block;
-        content: "";
-        width: 100%;
-        padding-top: 13.333333333%;
-      }
-
-      @include respondTo(upto-medium) {
-        background: url(assets/images/csf-2017-sponsors-mobile.png) no-repeat;
-        background-size: 100% auto;
-        &:before {
-          width: 100%;
-          padding-top: 46.666666667%;
-        }
-      }
-
-      li {
-        display: none;
-      }
-    }
-
-  } //.sponsors
 
   .site-info {
     margin: 0 0 ms(2);
@@ -92,3 +33,8 @@
   }
 
 } //.site-footer
+
+/*--------------------------------------------------------------
+## Sponsors
+--------------------------------------------------------------*/
+@import "sponsors";
