@@ -203,7 +203,17 @@
 			justify-content: space-around;
 			@include position(relative, 0 null null null);
 			width: 100%;
-			padding: ms(4) 0;
+			padding: ms(0) 0;
+
+			> .menu {
+				font-size: ms(1);
+
+				a {
+					padding: 1.25rem ms(1);
+					line-height: 1.2;
+				}//a
+
+			}//> .menu
 
 			ul > li {
 				display: block;
@@ -215,12 +225,13 @@
 					width: 100%;
 					display: block;
 					padding-left: ms(2);
+					margin-bottom: 1rem;
 
 					&:before {
 						content: '';
 						position: absolute;
 						top: 0;
-						left: ms(0);
+						left: .85em;
 						width: ms(-4);
 						height: 100%;
 						background: darken($color__accent-purple, 5%);

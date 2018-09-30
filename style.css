@@ -977,7 +977,12 @@ a {
     position: relative;
     top: 0;
     width: 100%;
-    padding: 2.25em 0; }
+    padding: 1em 0; }
+    .main-navigation.toggled .menu-main-navigation-container > .menu {
+      font-size: 1.286em; }
+      .main-navigation.toggled .menu-main-navigation-container > .menu a {
+        padding: 1.25rem 1.286em;
+        line-height: 1.2; }
     .main-navigation.toggled .menu-main-navigation-container ul > li {
       display: block;
       width: 100%;
@@ -986,12 +991,13 @@ a {
         position: relative;
         width: 100%;
         display: block;
-        padding-left: 1.5em; }
+        padding-left: 1.5em;
+        margin-bottom: 1rem; }
         .main-navigation.toggled .menu-main-navigation-container ul > li > ul.sub-menu:before {
           content: '';
           position: absolute;
           top: 0;
-          left: 1em;
+          left: .85em;
           width: 0.4444444444em;
           height: 100%;
           background: #59509b; } }
@@ -1012,7 +1018,7 @@ a {
 .header-message {
   animation: fadein 0.5s ease-out 0.2s backwards;
   max-width: 58em;
-  padding: 0 1em 1.5rem;
+  padding: 0.8rem 1em 1.5rem;
   margin: -1rem auto 1.5rem;
   text-align: center;
   border-bottom: 1px solid #ececf2; }
@@ -1020,7 +1026,7 @@ a {
     font-size: 0.6666666667em;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    margin-bottom: 0; }
+    margin: 0; }
     .header-message p span {
       margin: 0 1rem; }
       @media (max-width: 800px) {
