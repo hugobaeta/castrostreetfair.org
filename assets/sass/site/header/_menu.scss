@@ -12,6 +12,7 @@
 	text-transform: uppercase;
 	letter-spacing: ms(-10);
 	line-height: 1;
+	padding: 0;
 
   // Navigation
 	a {  // All links inside navigation
@@ -50,12 +51,20 @@
 				position: relative;
 	      padding: 0;
 	      margin: 0;
+
 	      a {
 	      	padding: ms(0) ms(2);
+
+					@include respondTo(upto-wide) {
+						padding: ms(0) ms(1);
+					}
+
 	      }
+
 				&.current_page_item > a {
 					color: $color__headernavlink-hover;
 				}
+
 			}
 
 			// Sub-menu
@@ -64,40 +73,44 @@
 				display: none;
 			}
 
-			li:hover > ul.sub-menu { // sub-menu
-				display: block;
-				@include position(absolute, null null null 50%);
-				@include transform(translateX(-50%));
-				width: ms(11);
-				background: $color__background-header;
-				border-radius: ms(-8);
-				text-align: left;
+			@include respondTo(atleast-medium) {
 
-				&:after {
-					@include position(absolute, null null 100% 50%);
-					@include transform(translateX(-50%));
-					content: " ";
-					height: 0;
-					width: 0;
-					border: solid transparent;
-					border-bottom-color: $color__background-header;
-					border-width: ms(-4);
-					pointer-events: none;
-				}
-
-				li, a {
+				li:hover > ul.sub-menu { // sub-menu
 					display: block;
-					width: 100%;
-				}
+					@include position(absolute, null null null 50%);
+					@include transform(translateX(-50%));
+					width: ms(11);
+					background: $color__background-header;
+					border-radius: ms(-8);
+					text-align: left;
 
-				a {
-					margin: 0;
-					padding: 0 ms(2) ms(2);
-				}
-				li:first-child a {
-					padding-top: ms(2);
-				}
-			} //sub-menu
+					&:after {
+						@include position(absolute, null null 100% 50%);
+						@include transform(translateX(-50%));
+						content: " ";
+						height: 0;
+						width: 0;
+						border: solid transparent;
+						border-bottom-color: $color__background-header;
+						border-width: ms(-4);
+						pointer-events: none;
+					}
+
+					li, a {
+						display: block;
+						width: 100%;
+					}
+
+					a {
+						margin: 0;
+						padding: 0 ms(2) ms(2);
+					}
+					li:first-child a {
+						padding-top: ms(2);
+					}
+				} //sub-menu
+
+			}//@include respondTo(atleast-medium)
 
 		} //ul
 
@@ -108,14 +121,7 @@
 
 	} //.menu-main-navigation-container
 
-	&.toggled .menu-main-navigation-container {
-		@include respondTo(upto-medium) {
-			display: block;
-		}
-	}
-
 } //.site-header .main-navigation
-
 
 
 
@@ -143,12 +149,6 @@
 	text-shadow: none;
 }
 
-.menu-toggle {
-	&:focus {
-		outline-color: $color__focus;
-	}
-}
-
 @include respondTo(atleast-medium) {
 	.menu-toggle {
 		display: none;
@@ -159,41 +159,79 @@
 }
 
 @include respondTo(upto-medium) {
+
 	.main-navigation {
 		//@include position(absolute, 0 0 null 0);
 		width: 100%;
 		margin: 0;
 		padding: ms(-8) ms(-4) ms(-2);
 		background-color: $color__accent-purple;
-		.menu-toggle {
+
+		button.menu-toggle {
+			display: block;
+			width: 100%;
+			padding: ms(1);
 			z-index: 300;
-		}
+			outline: none;
+
+			&:focus,
+			&:active {
+				outline: none;
+			}
+
+		}//button.menu-toggle
+
 		.menu-main-navigation-container {
 			display: none;
-		}
-	}
+		}//.menu-main-navigation-container
+
+	}//.main-navigation
 
 	// When Toggled
 	.main-navigation.toggled {
-		background-color: $color__accent-purple;
-		.menu-toggle:before {
-			content: 'Close ';
-		}
+
+		button.menu-toggle {
+			outline: none;
+			background: darken($color__accent-purple, 5%);
+			&:before {
+				content: 'Close ';
+			}//&:before
+		}//button.menu-toggle
+
 		.menu-main-navigation-container {
-			display: block;
+			display: flex;
+			justify-content: space-around;
 			@include position(relative, 0 null null null);
 			width: 100%;
 			padding: ms(4) 0;
+
 			ul > li {
 				display: block;
 				width: 100%;
 				text-align: left;
+
 				& > ul.sub-menu {
+					position: relative;
 					width: 100%;
 					display: block;
 					padding-left: ms(2);
-				}
-			}
-		}
-	}
-}
+
+					&:before {
+						content: '';
+						position: absolute;
+						top: 0;
+						left: ms(0);
+						width: ms(-4);
+						height: 100%;
+						background: darken($color__accent-purple, 5%);
+					}//&:before
+
+				}//& > ul.sub-menu
+
+			}//ul > li
+
+		}//.menu-main-navigation-container
+
+	}//.main-navigation.toggled
+
+}//@include respondTo(upto-medium)

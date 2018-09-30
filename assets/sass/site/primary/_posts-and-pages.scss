@@ -53,9 +53,23 @@
     }
 }
 
-.parent-pageid-16 .entry-header {
-	display: none;
-}
+.parent-pageid-16 {
+
+	.entry-header {
+		display: none;
+	}//.entry-header
+
+	.entry-content {
+		margin-top: 0;
+
+		p:first-child {
+			width: calc(100% + 2rem);
+			height: auto;
+			margin: -1rem -1rem 0;
+		}
+	}//.entry-content
+
+}//.parent-pageid-16
 
 .entry-header .entry-meta,
 .entry-footer {
