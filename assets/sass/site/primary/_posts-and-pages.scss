@@ -90,6 +90,17 @@
 }
 
 
+.posts-navigation {
+	.nav-links a {
+		display: inline-block;
+		text-decoration: none;
+		padding: 0.5rem 1.5rem;
+		background: $color__accent-purple;
+		color: white;
+		border-radius: 0.25rem;
+	}
+}
+
 
 
 .post-navigation {

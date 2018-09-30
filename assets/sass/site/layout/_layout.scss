@@ -1,3 +1,7 @@
+.content-area {
+  margin-bottom: ms(8);
+}
+
 @include respondTo(atleast-medium) {
   .content-area {
     float: left;
