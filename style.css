@@ -1661,6 +1661,31 @@ ul.board-members {
         font-size: 0.8573333333em;
         line-height: 1; }
 
+ul.sponsors-grid {
+  list-style: none;
+  margin: 0 0 6rem;
+  padding: 1px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 1px;
+  background: #ececf2; }
+  ul.sponsors-grid li {
+    overflow: hidden;
+    background: white; }
+    ul.sponsors-grid li:nth-child(1), ul.sponsors-grid li:nth-child(2) {
+      grid-column: auto / span 6; }
+    ul.sponsors-grid li:nth-child(3), ul.sponsors-grid li:nth-child(4), ul.sponsors-grid li:nth-child(5) {
+      grid-column: auto / span 4; }
+    ul.sponsors-grid li:nth-child(6), ul.sponsors-grid li:nth-child(7), ul.sponsors-grid li:nth-child(8), ul.sponsors-grid li:nth-child(9) {
+      grid-column: auto / span 3; }
+  ul.sponsors-grid a {
+    display: block;
+    transition: transform 250ms ease-in-out; }
+    ul.sponsors-grid a:hover {
+      transform: scale(1.05);
+      transition: transform 150ms ease-in-out; }
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/

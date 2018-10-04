@@ -61,3 +61,55 @@ ul.board-members {
     }
   }
 }
+
+
+
+// Sponsors
+ul.sponsors-grid {
+  list-style: none;
+  margin: 0 0 6rem;
+  padding: 1px;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 1px;
+
+  background: $color__background-hr;
+
+  li {
+    overflow: hidden;
+    background: white;
+
+    &:nth-child(1), // Trumer Pils
+    &:nth-child(2) { // Founders
+      grid-column: auto / span 6;
+    }
+
+    &:nth-child(3), // Lyft
+    &:nth-child(4), // Norcal
+    &:nth-child(5){ // Recology
+      grid-column: auto / span 4;
+    }
+
+    &:nth-child(6), // Bay Times
+    &:nth-child(7), // Betty's List
+    &:nth-child(8), // GFTA
+    &:nth-child(9) { // SF
+      grid-column: auto / span 3;
+    }
+
+  }//li
+
+  a {
+    display: block;
+    transition: transform 250ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+      transition: transform 150ms ease-in-out;
+    }//&:hover
+
+  }//a
+
+}//ul.sponsors-grid
